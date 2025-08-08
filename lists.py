@@ -91,3 +91,30 @@ print(merge([1,7,45,32,12],[49,23,65,12,97]))
  b=[6,54,34,65]
  a.extend(b)
  print(a)
+#find all the pairs in list that sum up to the specifi number
+list=[1,6,3,4,5,2]
+target=7
+for i in range(len(list)):
+    for j in range(i+1,len(list)):
+        if list[i]+list[j]==target:
+            print(f"{list[i]} ,{list[j]}")
+#split a list into n equal parts
+list=[3,2,4,6,7,8,12,13]
+n=int(input("Enter the n number : "))
+def split_list(list,n):
+     avg=len(list)/n
+     out=[]
+     last=0
+     while last<len(list):
+          out.append(list[int(last):int(last+avg)])
+          last+=avg
+     return out
+print(split_list(list,n))
+#flattened the nested list
+list=[[1,2],[3,8],[4,9]]
+li=[]
+for i in list:
+     for j in i:
+          li.append(j)
+print(li)
+          
