@@ -106,3 +106,4 @@ for i in range(len(li)):
                li[j] , li[j+1]= li[j+1], li[j]
 
 print(li)
+
